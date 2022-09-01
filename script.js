@@ -146,11 +146,13 @@ function checkCollisoins(){
     ){
         changeDirection('LeftOrRight')
     }
+    //победа
     if(blocks.length==0){
         clearInterval(timer1)
         clearInterval(timer2)
         document.removeEventListener('keydown', moveUser)
         document.querySelector('.win').style.visibility = 'visible';
+        pausePlay.style.visibility='hidden';
     }
 
     //проигрыш
@@ -159,6 +161,7 @@ function checkCollisoins(){
         clearInterval(timer2)
         document.removeEventListener('keydown', moveUser)
         document.querySelector('.lose').style.visibility = 'visible';
+        pausePlay.style.visibility='hidden';
     }
 }
 
