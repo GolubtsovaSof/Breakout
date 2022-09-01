@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid"></div>
+    <div class="win">
+        <div class="result">
+            <h1>YOU WON</h1>
+            <img class="retry" src="./retry.png" onclick="location.reload()"></img>
+        </div>
+    </div>
+    <div class="lose">
+        <div class="result">
+            <h1>GAME OVER</h1>
+            <img class="retry" src="./retry.png" onclick="location.reload()"></img>
+        </div>
+    </div>
+    <img class="pauseAndPlay" src="./pause.png" onclick="changeState()"></img>
+    <script src="script.js"></script>
+</body>
+</html>
