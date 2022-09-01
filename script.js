@@ -152,7 +152,7 @@ function checkCollisoins(){
         clearInterval(timer2)
         document.removeEventListener('keydown', moveUser)
         document.querySelector('.win').style.visibility = 'visible';
-        pausePlay.style.visibility='hidden';
+        document.querySelector('.pauseAndPlay').style.visibility = 'hidden';
     }
 
     //проигрыш
@@ -161,7 +161,7 @@ function checkCollisoins(){
         clearInterval(timer2)
         document.removeEventListener('keydown', moveUser)
         document.querySelector('.lose').style.visibility = 'visible';
-        pausePlay.style.visibility='hidden';
+        document.querySelector('.pauseAndPlay').style.visibility = 'hidden';
     }
 }
 
